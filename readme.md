@@ -4,7 +4,7 @@
 
 ```sudo quix pipeline up```
 
-This gets kafka up and running. Fortunately, [quix]() obfuscates a lot of complexity here and this ends up being one simple command.
+This gets kafka up and running. Fortunately, [quix](https://quix.io/get-started-with-quix-streams) obfuscates a lot of complexity here and this ends up being one simple command.
 
 ```python3 main.py```
 
@@ -21,7 +21,7 @@ Piping into `jq .` turns all formats Json events nicely.
 ```Ctrl+C```
 
 Execute this command in the tab where `main.py` was running to stop the events from showing.
-i
+
 ```quix pipeline down```
 
 Kills the docker container where kafka is running.
