@@ -32,3 +32,13 @@ Kills the docker container where kafka is running.
 Shows that the process is being closed off properly:
 
 [Quix application docs](https://quix.io/docs/quix-streams/api-reference/application.html#applicationconfigcopy)
+
+## Troubleshooting
+
+After running `sudo quix pipeline down`, If you are encountering the following error:
+
+```bash
+cannot stop container: <container ID>: permission denied
+```
+
+run `sudo aa-remove-unknown` and then run `sudo quix pipeline down` again.
